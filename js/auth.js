@@ -189,3 +189,20 @@ function showUsernamePopup() {
     gsap.from(popup, { scale: 0.8, opacity: 0, duration: 0.5, ease: 'back.out(1.7)' });
   }
 }
+
+const googleLogin = document.getElementById('google-login');
+if (googleLogin) {
+  googleLogin.addEventListener('click', async () => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: 'https://priyamkar24.github.io/igit-marketplace/profile.html' // Update this
+      }
+    });
+
+    if (error) {
+      console.error('Google login error:', error.message);
+      alert('Google login failed: ' + error.message);
+    }
+  });
+}
