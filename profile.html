@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - IGIT Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="profile-section">
+      <h2>Profile</h2>
+      <img src="assets/default-profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
+      <form id="upload-form">
+        <input type="file" id="avatar-upload" accept="image/*">
+        <button type="submit">Upload Image</button>
+      </form>
+      <h3 id="profile-name">User</h3>
+      <form id="username-form">
+        <input type="text" id="username-input" placeholder="Choose a username" required>
+        <button type="submit">Save Username</button>
+      </form>
+      <form id="profile-form">
+        <label for="year">Year of Study:</label>
+        <select id="year">
+          <option value="">Select Year</option>
+          <option value="1st">1st</option>
+          <option value="2nd">2nd</option>
+          <option value="3rd">3rd</option>
+          <option value="4th">4th</option>
+        </select>
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" placeholder="e.g., Computer Science">
+        <label for="hostel">Hostel:</label>
+        <input type="text" id="hostel" placeholder="e.g., Brahmaputra">
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </main>
+  <nav class="bottom-navbar">
+    <ul>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li class="profile-menu">
+        <a href="profile.html">Profile</a>
+        <div class="profile-dropdown">
+          <img src="assets/default-profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-dropdown-pic">
+          <p id="profile-dropdown-name">User</p>
+          <p id="profile-dropdown-email">email@example.com</p>
+        </div>
+      </li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><button id="logout">Logout</button></li>
+    </ul>
+  </nav>
+</body>
+</html>

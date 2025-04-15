@@ -1,0 +1,17 @@
+.profile-section {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#upload-form {
+  margin: 10px 0;
+}

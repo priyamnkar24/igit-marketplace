@@ -1,0 +1,115 @@
+
+.landing {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #6B46C1 0%, #ED64A6 100%); /* Purple gradient */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left; /* Left-aligned text as per image */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container .logo {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  .logo-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .background-text {
+    font-size: 1.4rem;
+    color: #55007d; /* Lighter purple for "BACKGROUND" */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #E9D8FD; /* Light text color for contrast */
+  }
+  
+  .continue-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #6B46C1; /* Matching purple from gradient */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    font-size: 1.1rem;
+    transition: background 0.3s, transform 0.3s;
+    border: 2px solid #fff;
+  }
+  
+  .continue-btn:hover {
+    background: #553C9A; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Abstract circles */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 10%;
+  }
+  
+  .circle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    bottom: 20%;
+    left: 20%;
+  }
+  
+  .circle:nth-child(4) {
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    right: 20%;
+  }
+  
+  /* Animation for circles */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }

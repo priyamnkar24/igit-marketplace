@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - IGIT Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/marketplace.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Marketplace</h2>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="item">Items</option>
+      <option value="service">Services</option>
+    </select>
+    <div id="listings"></div>
+    <div class="modal" id="item-modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <img id="modal-image" src="" alt="Item">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+        <p id="modal-seller"></p>
+        <button id="contact-seller">Contact Seller</button>
+      </div>
+    </div>
+  </main>
+  <nav class="bottom-navbar">
+    <ul>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li class="profile-menu">
+        <a href="profile.html">Profile</a>
+        <div class="profile-dropdown">
+          <img src="assets/default-profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-dropdown-pic">
+          <p id="profile-dropdown-name">User</p>
+          <p id="profile-dropdown-email">email@example.com</p>
+        </div>
+      </li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><button id="logout">Logout</button></li>
+    </ul>
+  </nav>
+</body>
+</html>
