@@ -1,42 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+
 
 .landing {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #6B46C1 0%, #ED64A6 100%); /* Purple gradient */
-    color: #fff;
-    padding: 20px;
+ 
+  border-radius: 20px;
+  
+
+   background-image: url('/assets/background.svg');
+    color: #ffc688;
+    background-size: cover;
     display: flex;
     align-items: center;
+    
+    
   }
   
   .content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
-    text-align: left; /* Left-aligned text as per image */
+    max-width: 900px;
+     /* Left-aligned text as per image */
+     
   }
   
   .logo-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    
   }
   
   .logo-container .logo {
-    width: 100px;
+    width: 120px;
     margin-right: 10px;
   }
   
   .logo-container span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
   }
   
   h1 {
     font-size: 5rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: #426473;
   }
   
   .background-text {
@@ -49,26 +61,28 @@
   }
   
   p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #E9D8FD; /* Light text color for contrast */
+    color: #a03c14; /* Lighter purple for "BACKGROUND" */
+    
   }
   
   .continue-btn {
     display: inline-block;
-    padding: 12px 30px;
-    background: #6B46C1; /* Matching purple from gradient */
-    color: #fff;
+    padding: 12px 20px;
+    background: #00000000; /* Matching purple from gradient */
+    color: #4c6781;
     text-decoration: none;
     border-radius: 50px; /* Pill shape */
     font-size: 1.1rem;
     transition: background 0.3s, transform 0.3s;
-    border: 2px solid #fff;
+    border: 5px solid #ffc688;
+    margin-left: 550px;
   }
   
   .continue-btn:hover {
-    background: #553C9A; /* Darker shade on hover */
+    background: #ffc688; /* Darker shade on hover */
     transform: scale(1.05);
   }
   

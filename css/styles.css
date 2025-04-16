@@ -1,22 +1,25 @@
 * {
   margin: 0;
-  padding: 0;
+  padding-top: 22px;
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: #ffffff;
 }
 
 main {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   min-height: calc(100vh - 70px); /* Adjust for bottom navbar */
+
+
   padding-bottom: 80px; /* Space for floating navbar */
 }
+
 
 h2 {
   margin-bottom: 20px;
@@ -96,7 +99,7 @@ button:hover {
 }
 
 .login-card {
-  background: #fff;
+  background-image: url('/assets/background.svg');
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,15 +125,16 @@ button:hover {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .login-card button {
-  background: #28a745;
+  background: #0000006e;
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background 0.3s;
+  border-radius: 20px;
 }
 
 .login-card button:hover {
@@ -164,7 +168,7 @@ button:hover {
 
 /* Bottom Navbar Styles */
 .bottom-navbar {
-  position: fixed;
+  position: relative;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);

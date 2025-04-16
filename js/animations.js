@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedText = document.getElementById('typed-text');
   const cursor = document.getElementById('cursor');
   if (typedText && cursor) {
-    const phrases = ['Buy', 'Sell', 'Hire', 'Connect'];
+    const phrases = ['Welcome...', 'स्वागतम्...', 'ସ୍ବାଗତ...',];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -49,16 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!isDeleting && charIndex <= phrases[phraseIndex].length) {
         typedText.textContent = phrases[phraseIndex].slice(0, charIndex);
         charIndex++;
-        gsap.to(cursor, { opacity: 0, duration: 0.5, repeat: -1, yoyo: true });
+        gsap.to(cursor, { opacity: 0, duration: 0.7, repeat: -1, yoyo: true });
       }
       if (isDeleting && charIndex >= 0) {
         typedText.textContent = phrases[phraseIndex].slice(0, charIndex);
         charIndex--;
-        gsap.to(cursor, { opacity: 0, duration: 0.5, repeat: -1, yoyo: true });
+        gsap.to(cursor, { opacity: 0, duration: 0.7, repeat: -1, yoyo: true });
       }
       if (charIndex === phrases[phraseIndex].length + 1) {
         isDeleting = true;
-        gsap.to(cursor, { opacity: 0, duration: 0.5, repeat: -1, yoyo: true });
+        gsap.to(cursor, { opacity: 0, duration: 0.7, repeat: -1, yoyo: true });
       }
       if (charIndex === 0 && isDeleting) {
         isDeleting = false;
